@@ -1,3 +1,5 @@
-function sayHello() {
-    alert("你好，小可愛～這是你的第一個互動網頁喲！");
+function revealSecret() {
+    const secretMessage = document.getElementById("secret");
+    secretMessage.style.display = "block";
+    alert("呵呵～你按下了我的按鈕，看來你逃不掉啦～ (^-^)");
 }
