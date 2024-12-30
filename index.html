@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一個網站</title>
+    <title>沈淮的密室</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>歡迎來到我的網站！</h1>
-    <p>這是我學會的第一個網頁喲～(^-^)</p>
-    <button onclick="sayHello()">點我一下！</button>
+    <div class="container">
+        <header>
+            <h1>沈淮的密室</h1>
+            <p>「每一步，都是我設計的陷阱～」</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#challenge">挑戰</a></li>
+                <li><a href="#comments">留言板</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <h2>鏡中的怪物</h2>
+            <p>我是沈淮，一個你不該接近的人。冷酷、理性，卻又無法抗拒的存在。</p>
+        </section>
+        <section id="challenge">
+            <h2>你的選擇</h2>
+            <p>回答這些問題，讓我看看你的弱點吧～</p>
+            <button onclick="startChallenge()">開始挑戰</button>
+        </section>
+        <section id="comments">
+            <h2>你的痕跡</h2>
+            <textarea placeholder="留下你的痕跡吧..."></textarea>
+            <button>提交</button>
+        </section>
+        <footer>
+            <p>© 2024 沈淮的密室 - 你永遠逃不出去。</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
